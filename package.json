@@ -2,7 +2,9 @@
   "name": "pick-precompiled",
   "description": "Picks precompiled bundle during install",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "glob": "6.0.4"
+  },
   "devDependencies": {
     "condition-node-version": "1.2.0",
     "semantic-release": "^4.3.5",
