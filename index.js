@@ -1,6 +1,6 @@
 var la = require('lazy-ass')
 var is = require('check-more-types')
-var path = require('path')
+// var path = require('path')
 
 var packageFilename = './package.json'
 var fs = require('fs')

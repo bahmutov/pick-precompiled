@@ -5,10 +5,12 @@
   "dependencies": {},
   "devDependencies": {
     "condition-node-version": "1.2.0",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^4.3.5",
+    "standard": "5.4.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run postinstall",
+    "lint": "standard *.js",
     "postinstall": "echo \"Picking pre-compiled bundle\"",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
