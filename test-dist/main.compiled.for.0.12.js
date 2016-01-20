@@ -1,5 +1,5 @@
 'use strict';
-require('compiled').babelPolyfill()
+require('pick-precompiled').babelPolyfill()
 
 // calc.js
 

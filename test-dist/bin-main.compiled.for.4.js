@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
 'use strict';
-require('compiled').babelPolyfill()
+require('pick-precompiled').babelPolyfill()
 
 console.log(`example with hash bang line`);
