@@ -1,17 +1,27 @@
 {
   "name": "pick-precompiled",
-  "version": "1.0.0",
   "description": "Picks precompiled bundle during install",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "condition-node-version": "1.2.0",
+    "semantic-release": "^4.3.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "echo \"Picking pre-compiled bundle\""
+    "postinstall": "echo \"Picking pre-compiled bundle\"",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahmutov/pick-precompiled.git"
+    "url": "https://github.com/bahmutov/pick-precompiled.git"
+  },
+  "release": {
+    "verifyConditions": {
+      "path": "condition-node-version",
+      "node": "4.2.2",
+      "verbose": true
+    }
   },
   "keywords": [
     "pre-compiled",
