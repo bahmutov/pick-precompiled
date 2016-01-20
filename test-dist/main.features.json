@@ -1,0 +1,11 @@
+[
+  "StringMethods",
+  "arrow",
+  "conciseMethodProperty",
+  "destructuring",
+  "letConst",
+  "numericLiteral",
+  "parameterDestructuring",
+  "spreadRest",
+  "templateString"
+]

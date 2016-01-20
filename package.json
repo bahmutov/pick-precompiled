@@ -6,7 +6,8 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "echo \"Picking pre-compiled bundle\""
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,15 @@
     "ES6",
     "ES2015"
   ],
+  "config": {
+    "pre-compiled": {
+      "dir": "test-dist",
+      "files": [
+        "test/main.js",
+        "test/bin-main.js"
+      ]
+    }
+  },
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "bugs": {
