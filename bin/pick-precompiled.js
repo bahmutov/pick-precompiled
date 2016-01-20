@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+
+'use strict'
+
 function pickBundles () {
   var la = require('lazy-ass')
   var is = require('check-more-types')
