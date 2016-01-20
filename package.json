@@ -1,0 +1,27 @@
+{
+  "name": "pick-precompiled",
+  "version": "1.0.0",
+  "description": "Picks precompiled bundle during install",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/pick-precompiled.git"
+  },
+  "keywords": [
+    "pre-compiled",
+    "bundle",
+    "ES6",
+    "ES2015"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/pick-precompiled/issues"
+  },
+  "homepage": "https://github.com/bahmutov/pick-precompiled#readme"
+}
