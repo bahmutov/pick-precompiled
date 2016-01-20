@@ -21,9 +21,9 @@
     "bin"
   ],
   "scripts": {
-    "test": "npm run postinstall",
+    "test": "npm run test-postinstall",
     "lint": "standard bin/*.js",
-    "postinstall": "echo \"Picking pre-compiled bundle\" && npm run pick",
+    "test-postinstall": "echo \"Picking pre-compiled bundle\" && npm run pick",
     "pick": "node bin/pick-precompiled.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
