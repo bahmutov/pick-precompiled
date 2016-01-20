@@ -13,7 +13,8 @@
   "scripts": {
     "test": "npm run postinstall",
     "lint": "standard *.js",
-    "postinstall": "echo \"Picking pre-compiled bundle\"",
+    "postinstall": "echo \"Picking pre-compiled bundle\" && npm run pick",
+    "pick": "node index.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
