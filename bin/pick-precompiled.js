@@ -87,12 +87,4 @@ function pickBundles () {
   })
 }
 
-if (module.parent) {
-  module.exports = {
-    babelPolyfill: function () {
-      require('babel-polyfill')
-    }
-  }
-} else {
-  pickBundles()
-}
+pickBundles()

@@ -18,11 +18,12 @@
     "standard": "5.4.1"
   },
   "files": [
-    "bin"
+    "bin",
+    "index.js"
   ],
   "scripts": {
     "test": "npm run test-postinstall",
-    "lint": "standard bin/*.js",
+    "lint": "standard bin/*.js *.js",
     "test-postinstall": "echo \"Picking pre-compiled bundle\" && npm run pick",
     "pick": "node bin/pick-precompiled.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
